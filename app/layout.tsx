@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import React from 'react';
 import SearchBar from '@/components/SearchBar';
+import Tabs from '@/components/Tabs';
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
           <h1 className='text-center text-3xl font-bold mb-6'>Library</h1>
           <p className='text-center text-sm mb-8'>Browse for assets needed to report and present analysis</p>
           <SearchBar />
+          <Tabs />
           <div className='mt-6'>{children}</div>
           <button className='absolute right-3 top-3 p-1 bg-[#64738b] hover:bg-[#525f73] text-white text-sm rounded'>
             <div className='flex w-full items-center justify-center p-1'>
@@ -38,6 +40,6 @@ export default function RootLayout({
           </button>
         </div>
       </body>
-    </html>
+    </html >
   );
 }
