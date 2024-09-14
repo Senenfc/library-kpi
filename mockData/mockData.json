@@ -1,0 +1,88 @@
+{
+    "kpis": [
+        {
+            "id": 1,
+            "title": "Sales Performance",
+            "metricId": "SP001",
+            "description": "Short description of the KPI goes nicely here.",
+            "calculation": "Description of the calculation method.",
+            "charts": [
+                "Bar Chart",
+                "Line Chart"
+            ],
+            "affiliate": "Company A",
+            "businessQuestions": [
+                "First business question?",
+                "Other diferent business question?"
+            ],
+            "insights": [
+                "I wrote the first insight.",
+                "You wrote the second one."
+            ],
+            "createdAt": "20/06/2024"
+        },
+        {
+            "id": 2,
+            "title": "Customer Retention",
+            "metricId": "CR002",
+            "description": "Short description of the KPI goes nicely here.",
+            "calculation": "Description of the calculation method.",
+            "charts": [
+                "Pie Chart",
+                "Bar Chart"
+            ],
+            "affiliate": "Company B",
+            "businessQuestions": [
+                "First business question?",
+                "Other diferent business question?"
+            ],
+            "insights": [
+                "I wrote the first insight.",
+                "You wrote the second one."
+            ],
+            "createdAt": "08/07/2024"
+        },
+        {
+            "id": 3,
+            "title": "Develop Performance",
+            "metricId": "DP003",
+            "description": "Short description of the KPI goes nicely here.",
+            "calculation": "Description of the calculation method.",
+            "charts": [
+                "Bar Chart",
+                "Line Chart"
+            ],
+            "affiliate": "Company A",
+            "businessQuestions": [
+                "First business question?",
+                "Other diferent business question?"
+            ],
+            "insights": [
+                "I wrote the first insight.",
+                "You wrote the second one."
+            ],
+            "createdAt": "15/08/2024"
+        },
+        {
+            "id": 4,
+            "title": "Customer Affiliates",
+            "metricId": "CA004",
+            "description": "Short description of the KPI goes nicely here.",
+            "calculation": "Description of the calculation method.",
+            "charts": [
+                "Pie Chart",
+                "Bar Chart"
+            ],
+            "affiliate": "Company B",
+            "businessQuestions": [
+                "First business question?",
+                "Other diferent business question?"
+            ],
+            "insights": [
+                "I wrote the first insight.",
+                "You wrote the second one."
+            ],
+            "createdAt": "22/08/2024"
+        }
+    ]
+}
