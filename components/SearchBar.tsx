@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import SearchIcon from "./icons/SearchIcon"
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
@@ -20,7 +20,8 @@ export default function SearchBar() {
     const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const searchValue = e.target.value;
         setSearch(searchValue);
-
+        
+        // add or delete searchParams when searchBar changes
         if (searchValue === '') {
             router.replace(pathname);
         } else {
@@ -29,7 +30,7 @@ export default function SearchBar() {
     }
 
     return (
-        <div className="relative flex items-center mb-4">
+        <section className="relative flex items-center mb-4">
             <span className="absolute left-2 text-gray-500">
                 <SearchIcon />
             </span>
@@ -41,6 +42,6 @@ export default function SearchBar() {
                 placeholder="Type to search..."
                 className="border rounded text-xs font-light px-7 py-2 w-full"
             />
-        </div>
+        </section>
     )
 }

@@ -2,7 +2,6 @@ import RequestIcon from '@/components/icons/RequestIcon';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
-import React from 'react';
 import SearchBar from '@/components/SearchBar';
 import Tabs from '@/components/Tabs';
 
@@ -16,6 +15,7 @@ export const metadata: Metadata = {
   description: 'Manage your resources (KPI, Layouts, Storyboards)',
 };
 
+// receibe modal for charge when intercept route
 export default function RootLayout({
   children,
   modal
@@ -31,13 +31,14 @@ export default function RootLayout({
           <p className='text-center text-sm mb-8'>Browse for assets needed to report and present analysis</p>
           <SearchBar />
           <Tabs />
-          <div className='mt-6'>{children}</div>
+          <article className='mt-6'>{children}</article>
           <button className='absolute right-3 top-3 p-1 bg-[#64738b] hover:bg-[#525f73] text-white text-sm rounded'>
             <div className='flex w-full items-center justify-center p-1'>
               <RequestIcon />
               <span className='ml-1 text-xs font-medium'>Request</span>
             </div>
           </button>
+          {modal}
         </div>
       </body>
     </html >

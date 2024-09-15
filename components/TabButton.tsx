@@ -1,6 +1,6 @@
 'use client';
 
-import React, { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function TabButton({ text, path }: { text: string, path: string }) {
     const router = useRouter();
